@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bodzinho327/Desktop/Tutorial9/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp.csproj": {}
+    "/Users/bodzinho327/Documents/task9/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp.csproj": {}
   },
   "projects": {
-    "/Users/bodzinho327/Desktop/Tutorial9/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp.csproj": {
+    "/Users/bodzinho327/Documents/task9/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bodzinho327/Desktop/Tutorial9/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp.csproj",
+        "projectUniqueName": "/Users/bodzinho327/Documents/task9/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp.csproj",
         "projectName": "LinqConsoleApp",
-        "projectPath": "/Users/bodzinho327/Desktop/Tutorial9/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp.csproj",
+        "projectPath": "/Users/bodzinho327/Documents/task9/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp.csproj",
         "packagesPath": "/Users/bodzinho327/.nuget/packages/",
-        "outputPath": "/Users/bodzinho327/Desktop/Tutorial9/LinqConsoleApp/LinqConsoleApp/LinqConsoleApp/obj/",
+        "outputPath": "/Users/bodzinho327/Documents/task9/LinqConsoleApp/LinqConsoleApp/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

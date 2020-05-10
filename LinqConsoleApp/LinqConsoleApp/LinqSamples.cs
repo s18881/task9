@@ -39,11 +39,9 @@ namespace LinqConsoleApp
         // <summary>
         // SELECT MAX(Salary) FROM Emps;
         // </summary>
-        public static Emp Task3()
+        public static int Task3()
         {
-            return Emps
-                .OrderByDescending(emp => emp.Salary)
-                .First();
+            return Emps.Max(e => e.Salary);
         }
 
         // <summary>
@@ -52,7 +50,7 @@ namespace LinqConsoleApp
         public static IEnumerable<Emp> Task4()
         {
             return Emps
-                .Where(emp => emp.Salary == Task3().Salary)
+                .Where(emp => emp.Salary == Task3())
                 .ToList();
         }
 
@@ -126,11 +124,9 @@ namespace LinqConsoleApp
         /// </summary>
         public static IEnumerable<Emp> Task10()
         {
-           var nullList = new List<Emp>();
-           nullList.Add(new Emp {Ename = "No value", Job = null,  HireDate = null });
-           return Emps
+            return Emps
                .Select(emp => new Emp { Ename = emp.Ename, Job = emp.Job, HireDate = emp.HireDate })
-               .Union(nullList)
+               .Union(new List<Emp>() { new Emp { Ename = "No value", Job = null, HireDate = null } })
                .ToList();
         }
 
@@ -138,8 +134,7 @@ namespace LinqConsoleApp
         public static Emp Task11()
         {
             return Emps
-                .Select(emp => emp)
-                .Aggregate((emp1, emp2) => emp1.Salary > emp2.Salary ? emp1 : emp2);
+                .Aggregate((max, cemp) => max.Salary > cemp.Salary ? max : cemp);
         }
 
         //Using the LINQ language and the SelectMany method, 
